@@ -22,7 +22,7 @@ The research field of the lab covers hardware implementation of ML, ECC, and Sec
 
 
 # <font color="#4E2683">Outline</font>
-### [1. Introduction](https://github.com/KW-Baker/OasisBears-WhereToFindThem/edit/main/README.md#introduction-1)
+### [1. Introduction](#introduction-1)
 ### [2. Difficulties & Innovation](https://github.com/KW-Baker/OasisBears-WhereToFindThem/edit/main/README.md#difficulties--innovation)
 ### [3. Design & Implementation](#設計與實現)
 ### [4. Demo & Result](#測試結果)
@@ -35,7 +35,7 @@ The research field of the lab covers hardware implementation of ML, ECC, and Sec
 <!-- https://user-images.githubusercontent.com/96005167/181204805-ef69177c-7cb1-4f42-ae35-33eff0ccf267.mp4 -->
 
 
-![](https://user-images.githubusercontent.com/96005167/181206306-792f0f50-0c1e-4d1d-8ec2-fed1f45ca1ff.gif)
+
 
 ### <font color="#4E2683">Motivation</font>
 * Smart building
@@ -43,22 +43,24 @@ The research field of the lab covers hardware implementation of ML, ECC, and Sec
 * Prevent epidemic
 
 ### <font color="#4E2683">Solution</font>
-We propose a contactless control panel combined with face authentication, which can send control signals and verify the user’s identity without touching the panel. 
+We propose a contactless control panel combined with face authentication, which can send control signals and verify the user’s identity without touching the panel! 
 
 * Using “Siamese Network” to train a face authentication model with a small number of examples, and deploy the model on ARC EM9D AIoT DK with TensorFlow Lite.
 * Using Mediapipe Hand and OpenCV to implement a contactless virtual control panel through gesture recognition on NVIDIA Jetson Nano.
 
-## <font color="#4E2683">Scenario 1: </font>Virtual elevator button panel + Visitor verification
+### <font color="#4E2683">Scenario 1: </font>Virtual elevator button panel + Visitor verification
 *  Control the elevator with gesture recognition
 *  Visitor verification
 *  Virtual elevator control panel
 
-### <font color="#4E2683">Scenario 2: </font>Smart door lock (example)
+![](https://user-images.githubusercontent.com/96005167/181206306-792f0f50-0c1e-4d1d-8ec2-fed1f45ca1ff.gif)
+
+### <font color="#4E2683">Scenario 2: </font>Smart door lock 
 *  Identity verification
 *  Stranger Record
 *  Virtual touchless door lock
 
-### <font color="#4E2683">Scenario 3: </font>Contactless ticket machine screen (example)
+### <font color="#4E2683">Scenario 3: </font>Contactless ticket machine screen
 * Record the usage time of different users
 * Combined with automatic recommendation system
 * Avoid touching public touchscreens
