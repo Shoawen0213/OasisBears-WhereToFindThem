@@ -26,8 +26,8 @@ The research field of the lab covers hardware implementation of ML, ECC, and Sec
 ### [1. Introduction](#introduction-1)
 ### [2. Difficulties & Innovation](#difficulties--innovation)
 ### [3. Design & Implementation](#design--implementation)
-### [4. Demo & Result](#測試結果)
-### [5. Conclusion](#總結展望)
+### [4. Demo & Result](#demo--result)
+### [5. Conclusion](#conclusion)
 
  
 # Introduction
@@ -225,8 +225,8 @@ We propose a contactless control panel combined with face authentication, which 
 
 Demo1: https://www.youtube.com/watch?v=hRp12IpJmxE&ab_channel=ChenBaker
 
-[<img src="https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg" width="50%">](https://www.youtube.com/watch?v=hRp12IpJmxE&ab_channel=ChenBaker)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hRp12IpJmxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[<img src="https://user-images.githubusercontent.com/96005167/181232933-6f705d0c-0a00-4d50-8755-cf4605f385b1.png" width="50%">](https://www.youtube.com/watch?v=hRp12IpJmxE&ab_channel=ChenBaker)
+
 
 
 ### <font color="#4E2683">【Inferece on ARC EM9D】 </font>
@@ -244,7 +244,7 @@ Demo1: https://www.youtube.com/watch?v=hRp12IpJmxE&ab_channel=ChenBaker
 
 
 
-## 總結展望
+# Conclusion
 ### <font color="#4E2683">Hope to add… </font>
 * Recording the time when strange visitors enter the building.
 * Voice control 
