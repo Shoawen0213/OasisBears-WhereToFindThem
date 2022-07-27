@@ -25,18 +25,13 @@ The research field of the lab covers hardware implementation of ML, ECC, and Sec
 # <font color="#4E2683">Outline</font>
 ### [1. Introduction](#introduction-1)
 ### [2. Difficulties & Innovation](#difficulties--innovation)
-### [3. Design & Implementation](#設計與實現)
+### [3. Design & Implementation](#design--implementation)
 ### [4. Demo & Result](#測試結果)
 ### [5. Conclusion](#總結展望)
 
  
 # Introduction
-
-
 <!-- https://user-images.githubusercontent.com/96005167/181204805-ef69177c-7cb1-4f42-ae35-33eff0ccf267.mp4 -->
-
-
-
 
 ### <font color="#4E2683">【Motivation】</font>
 * Smart building
@@ -111,73 +106,61 @@ We propose a contactless control panel combined with face authentication, which 
  - In the future, we hope that it can combined with AR glasses and widely used in the metaverse.
 
 
-## Design & Implementation
-### <font color="#4E2683">Deep Facial Verification </font>
-* Deployment: ARC EM9D AIoT DK
+# Design & Implementation
+### <font color="#4E2683">【Hardware Architecture】 </font>
+
+
+![image](https://user-images.githubusercontent.com/96005167/181218301-72d60ad7-74b0-492b-9ca0-9ec74bff7b87.png)
+
+### <font color="#4E2683">【ARC EM9D AIoT DK】 </font>
 * Task: Face verification 
 * Model: Siamese Network Architecture
-![](https://i.imgur.com/yQlpdwX.png)
-![](https://i.imgur.com/Rkd7GjV.png)
 
 
-### <font color="#4E2683">Face Detection</font>
-* Deployment: ESP32 CAM
-* Task: Face detection
-* Model: MobileNet v2
-![](https://i.imgur.com/Ve16loY.png)
-![](https://i.imgur.com/Sjjd9Ct.png)
-
-### <font color="#4E2683">Hand pose Estimation</font>
-* Deployment: NVIDIA Jetson Nano
-* Task: Gesture recognition, system control
+### <font color="#4E2683">【NVIDIA Jetson Nano】</font>
+* Task: Hand pose Estimation, gesture recognition, and System control
 * Model: MediaPipe Hand
-![](https://i.imgur.com/kQZkbTl.png)
-![](https://i.imgur.com/tdCANWX.png)
 
-### <font color="#4E2683">Hardware Architecture</font>
-![](https://i.imgur.com/YSK1XOf.png)
 
-### <font color="#4E2683">Face Verification</font>
-*  ARC EM9D AIoT DK
-*  Siamese Network
+### <font color="#4E2683">【Siamese Network】</font>
+![image](https://user-images.githubusercontent.com/96005167/181220508-c1eff71a-083a-47f6-b595-6f56e73e2a1c.png)
 
-### <font color="#4E2683">Siamese Network</font>
 *  Siamese network inspired by “Siamese twins” which has a unique architecture
 *  Classify if the two inputs are the same or different (learn the similarity)
 *  Take two different inputs passed through two similar subnetworks 
 *  The two subnetworks have the same architecture, parameters, and weights
+*  Convert the classification problem to a similarity problem
+![image](https://user-images.githubusercontent.com/96005167/181219965-f150b460-23c9-411d-9a29-7fdb2f0d623c.png)
+![image](https://user-images.githubusercontent.com/96005167/181219585-53201978-c137-4b31-b75f-0ced7139e13f.png)
 
-### <font color="#4E2683">Why choose “Siamese Network”?</font>
+
+
+### <font color="#4E2683">【Why choose “Siamese Network" ?】?</font>
 *  Humans exhibits a strong ability to acquire and recognize new patterns
 *  A few-shot classification model
-*  Predict with just a single training example
-### <font color="#4E2683">Siamese Network</font>
-![](https://i.imgur.com/Dw48bRQ.png)
 
-### <font color="#4E2683">Data preprocessing</font>
 
- 
-#### -Resize: 100x100
-#### -Gray scale
+### <font color="#4E2683">【Data Preprocessing】</font>
+#### -Resize: 100x100x1
 #### -Data augmentation
-* Rotation
-* Flip
-* Zoom
-* Brightness
-* Blur
-* Noise
-#### -Dataset
+#### -Datase
 * Anchor: 600
 * Positive: 600
-* Negative: 600
-* 
-### <font color="#4E2683">Contactless Control Panel </font>
-* NVIDIA Jetson Nano
+* Negative: 600 ([Label Face in the Wild Dataset](http://vis-www.cs.umass.edu/lfw/) + self collect)
 
-### <font color="#4E2683">MediaPipe Hand Landmarks</font>
+
+![image](https://user-images.githubusercontent.com/96005167/181220830-c06e1ef9-5e4a-4db1-9705-d22bdd2bf746.png)
+
+
+### <font color="#4E2683">【Virtual Button Panel】 </font>
+* Hardware: NVIDIA Jetson Nano
+* Hand Tracking: Google MediaPipe Hand tracking module
+* Virtual Button: OpenCV
+
+### <font color="#4E2683"> 【MediaPipe Hand Landmarks】</font>
 
 * The palm detector model is used to find the region of the palm from the image.
-* The hand landmarks mod.el is used to mark the 3D key-points in the region of interest.
+* The hand landmarks model is used to mark the 3D key-points in the region of interest.
 * Measure the distance between the index finger and the middle finger to achieve the click operation to select the buttons of virtual panel.
 ![](https://i.imgur.com/MVDNqC6.png)
 
