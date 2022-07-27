@@ -2,7 +2,7 @@
 <!-- <a href="https://contest.synopsys.com.tw/2022ARC
 " target="_blank"><img src="https://user-images.githubusercontent.com/96005167/181190562-62bdda9f-2405-4c3a-b0f7-1f53a0abd062.png"
 alt="Link is failed!" width="300" border="10" /></a> -->
-## **Contactless Control Panel**
+# **Contactless Control Panel**
 
 ## Team Info.
 ### NCTU Oasis Lab (Machine Learning Group)
@@ -11,18 +11,17 @@ alt="Link is failed!" width="300" border="10" /></a> -->
 " target="_blank"><img src="https://user-images.githubusercontent.com/96005167/181191742-5188627a-c551-4014-901f-e627fd9b6ce2.png"
 alt="Link is failed!" width="200" border="10" /></a>
 
-#### Advisor： 張錫嘉 教授
-#### 隊員：陳冠瑋、鄭紹文、曹家輔、李家毓
-#### 隊名：綠洲熊與他們的窩
+#### Team ：  綠洲熊與他們的窩
+#### Advisor：張錫嘉 教授
+#### Members：陳冠瑋、鄭紹文、曹家輔、李家毓
+#### Introduction:
+We are students from the Oasis Lab of National Chiao Tung University (NCTU).
+
+The research field of the lab covers hardware implementation of ML, ECC, and Security. We hope that the ideals and works will be turned into reality through this competition, and we will try our best to complete the project worth looking forward to!
 
 
-... ... ...**June 25, 2022**... ... ...
-
-
-
----
-## <font color="#4E2683">Agenda</font>
-### [1. 作品概述](#作品概述)
+## <font color="#4E2683">Outline</font>
+### [1. Introduction](#作品概述)
 ### [2. 難點與創新](#難點與創新)
 ### [3. 設計與實現](#設計與實現)
 ### [4. 作品進度](#作品進度)
