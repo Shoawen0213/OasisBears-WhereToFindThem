@@ -1,4 +1,4 @@
-# **[2022 Synopsys ARC AIoT Design Contest](https://www.synopsys.com/zh-tw/taiwan/university-program/iot-initiative/2021-arc-aiot-design-contest.html)**
+# **[2022 Synopsys ARC AIoT Design Contest](https://contest.synopsys.com.tw/2022ARC)**
 <!-- <a href="https://contest.synopsys.com.tw/2022ARC
 " target="_blank"><img src="https://user-images.githubusercontent.com/96005167/181190562-62bdda9f-2405-4c3a-b0f7-1f53a0abd062.png"
 alt="Link is failed!" width="300" border="10" /></a> -->
