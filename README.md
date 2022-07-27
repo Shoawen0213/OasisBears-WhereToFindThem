@@ -156,6 +156,26 @@ We propose a contactless control panel combined with face authentication, which 
 * Hardware: NVIDIA Jetson Nano
 * Hand Tracking: Google MediaPipe Hand tracking module
 * Virtual Button: OpenCV
+* Click the virtual panel through the gesture
+* Index Finger: Select the virtual button
+* Index Finger + Middle Finger: Click the virtual button
+
+![image](https://user-images.githubusercontent.com/96005167/181224910-b5137257-aad7-439c-b21d-49608ed8292f.png)
+
+
+* **IDLE:**
+ 1. In the IDLE state, the system will stop performing gesture recognition, which can reduce the power consumption. 
+ 2. The HC-SR04 are used as the trigger of the system. 
+ 3. If face or an object is detected, the system will enter the RECOGNIZING state. 
+
+* **RECOGNIZING:**
+ 1. In the RECOGNIZING state, the system will recognize the user’s gesture and communicate with the PC, and will continue to monitor the signal from the trigger.
+ 2. If it is not triggered for 15 seconds, the system will enter the IDLE state.
+ 3. If there is a trigger signal, it will reset the timmer.
+
+
+![](https://i.imgur.com/p1pRgkU.png)
+![](https://i.imgur.com/jVZg8aU.png)
 
 ### <font color="#4E2683"> 【MediaPipe Hand Landmarks】</font>
 
@@ -165,55 +185,15 @@ We propose a contactless control panel combined with face authentication, which 
 ![](https://i.imgur.com/MVDNqC6.png)
 
 
-## 作品進度
-### <font color="#4E2683">Siamese Network (Orig.)</font> 
-#### - Embedding subnetwork 
-#### - Input size: (100,100,1)
-#### - Output vector: (4096,1)
-#### - Total params: 152,196,160
-#### - Dataset:
-*  anchor: 600 images
-*  positive: 600 images
-*  negative: 600 images
-#### - Batch size: 16
-#### - Loss function: 
-* binary cross entropy 
-![](https://i.imgur.com/Ay9nvju.png)
-![](https://i.imgur.com/ahMRfLA.png)
-### <font color="#4E2683">Siamese Network (Orig.)</font>
-![](https://i.imgur.com/hXgd48x.png)
-![](https://i.imgur.com/M7DdkFw.png)
-![](https://i.imgur.com/BWff00f.png)
-
-### <font color="#4E2683">Virtual Control Panel</font>
-* NVIDIA Jetson Nano
-### <font color="#4E2683">Program flow design</font>
-
-
-**IDLE:**
-- In the idle state, the system will stop performing gesture recognition, which can reduce the power consumption. 
-- The ESP32-CAM and HC-SR04 are used as the trigger of the system. 
-- If face or an object is detected, the system will enter the RECOGNIZING state. 
-
-**RECOGNIZING:**
-- In the RECOGNIZING state, the system will recognize the user’s gesture and communicate with the PC, and will continue to monitor the signal from the trigger.
-- If it is not triggered for 15 seconds, the system will enter the IDLE state.
-- If there is a trigger signal, it will reset the timmer.
-![](https://i.imgur.com/p1pRgkU.png)
-![](https://i.imgur.com/jVZg8aU.png)
-
-### <font color="#4E2683">Simulation Animation </font>
+### <font color="#4E2683">【Simulation Animation】 </font>
 * Use the Pygame library on the server to simulate the situation of the elevator. 
     * Going up and down
     * Opening and closing
 * Send the result signal to the server through Wi-Fi to control the elevator simulation animation.
 * In addition, we also consider the problem of elevator scheduling, so that the elevator can update the input floor in real time and can input multiple floors at the same time.
-### <font color="#4E2683">Four sates of elevator control</font>
- 
-* MOVING: Moving state
-* OPENING: Door opening state
-* HOLD: Door holding state
-* CLOSING: Door closing state
+![image](https://user-images.githubusercontent.com/96005167/181224106-4036d2fe-6567-43df-a8b3-c59f2d867e22.png)
+
+![image](https://user-images.githubusercontent.com/96005167/181224525-bf1d1670-98d8-4ec3-a16f-a91830a71a8d.png)
 
 
 ## 測試結果
