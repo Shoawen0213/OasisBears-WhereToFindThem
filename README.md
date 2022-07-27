@@ -68,7 +68,7 @@ We propose a contactless control panel combined with face authentication, which 
 
 
 # Difficulties & Innovation
-### <font color="#4E2683">Difficulties</font>
+### <font color="#4E2683">【Difficulties】</font>
 #### - Model size
 * Available memory size < 2MB
 * Auto-Encoder: Dimension Reduction
@@ -76,26 +76,39 @@ We propose a contactless control panel combined with face authentication, which 
 
 #### - Input images pairs for the Siamese network
 * Siamese network needs to compare two images at the same time
-
 ![image](https://user-images.githubusercontent.com/96005167/181212761-e70de490-c7af-4a76-9625-3cca4ffae1f4.png)
 
-
-### - Activation op can not use
-* In the original paper of Siamese Network, the sigmoid function is used as the activation function of the last layer.
-* However, ARC EM9D does not support the sigmoid function as activation function.
-* When we tried to use tanh as activation function with MSE as the loss function, we found that tanh did not support it either.
-* So, we decided to change the layers and architecture to make it a brand new Siamese Network to comply with ARC EM9D op codes requirements.
+#### - Transmission time
+* Validation data transmission
+* Save images for comparison in the system memory
+![image](https://user-images.githubusercontent.com/96005167/181213995-b7745e55-ff11-4a5d-a780-9d21a1a75de3.png)
 
 
+#### - MLI Library does not support some Ops
+* In the original paper of Siamese Network, the sigmoid function is used as the activation function of the last layer
+* However, MLI Library does not support the sigmoid function as activation function
+* When we tried to use tanh as activation function with MSE as the loss function, we found that tanh did not support it either
+* When implement the L1 distance layer, int8 abs() op does not support too
 
-### <font color="#4E2683">Innovation</font>
-* Using Siamese Network Architecture on TinyML
- Deep learning and CNN have made tremendous progress in the field of face recognition.
- - We choose “ Siamese network” architecture and use its ability to discriminate similarity to judge the similarity of two different faces.  
- - Compared with traditional CNN, the advantage of Siamese Network is that it does not need a large data set to train a good enough model, because the purpose of model is to compare the similarity of two inputs.
 
-###  - Combining control panel with computer vision
-* In the future, it can combined with AR glasses and widely used in the metaverse.
+
+
+### <font color="#4E2683">【Innovation】</font>
+#### - Siamese Network Architecture on TinyML
+ - Discriminate the similarity between two different input
+ - Small number of samples are needed
+
+#### - Small face verification model
+ - Low power: Used in unreliable power supply scenarios 
+ - Less computing & memory resources: Faster inference, faster deployment
+
+#### - Input dimension reduction 
+ - Auto-Encoder: Reduce the dimension of the input features
+ - Solve the bottleneck of inference time
+ - Deploy a more efficient model
+
+####  - Combining control panel with computer vision
+ - In the future, we hope that it can combined with AR glasses and widely used in the metaverse.
 
 
 ## Design & Implementation
