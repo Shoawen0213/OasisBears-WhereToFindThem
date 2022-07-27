@@ -24,7 +24,7 @@ The research field of the lab covers hardware implementation of ML, ECC, and Sec
 
 # <font color="#4E2683">Outline</font>
 ### [1. Introduction](#introduction-1)
-### [2. Difficulties & Innovation](https://github.com/KW-Baker/OasisBears-WhereToFindThem/edit/main/README.md#difficulties--innovation)
+### [2. Difficulties & Innovation](#difficulties--innovation)
 ### [3. Design & Implementation](#設計與實現)
 ### [4. Demo & Result](#測試結果)
 ### [5. Conclusion](#總結展望)
@@ -38,55 +38,65 @@ The research field of the lab covers hardware implementation of ML, ECC, and Sec
 
 
 
-### <font color="#4E2683">Motivation</font>
+### <font color="#4E2683">【Motivation】</font>
 * Smart building
 * Smart security
 * Prevent epidemic
 
-### <font color="#4E2683">Solution</font>
-We propose a contactless control panel combined with face authentication, which can send control signals and verify the user’s identity without touching the panel! 
+### <font color="#4E2683">【Solution】</font>
+We propose a contactless control panel combined with face authentication, which can send control signals and verify the user’s identity without touching the panel ! 
 
 * Using “Siamese Network” to train a face authentication model with a small number of examples, and deploy the model on ARC EM9D AIoT DK with TensorFlow Lite.
 * Using Mediapipe Hand and OpenCV to implement a contactless virtual control panel through gesture recognition on NVIDIA Jetson Nano.
 
-### <font color="#4E2683">Scenario 1: </font>Virtual elevator button panel + Visitor verification
+### <font color="#4E2683">【Scenario 1】: </font>Virtual elevator button panel + Visitor verification
 *  Control the elevator with gesture recognition
 *  Visitor verification
 *  Virtual elevator control panel
 
 ![](https://user-images.githubusercontent.com/96005167/181206306-792f0f50-0c1e-4d1d-8ec2-fed1f45ca1ff.gif)
 
-### <font color="#4E2683">Scenario 2: </font>Smart door lock 
+### <font color="#4E2683">【Scenario 2】: </font>Smart door lock 
 *  Identity verification
 *  Stranger Record
 *  Virtual touchless door lock
 
-### <font color="#4E2683">Scenario 3: </font>Contactless ticket machine screen
+### <font color="#4E2683">【Scenario 3】: </font>Contactless ticket machine screen
 * Record the usage time of different users
 * Combined with automatic recommendation system
 * Avoid touching public touchscreens
 
 
-## Difficulties & Innovation
-### <font color="#4E2683">Innovation</font>
-### - Using Siamese Network Architecture on TinyML
-* Deep learning and CNN have made tremendous progress in the field of face recognition.
-* We choose “ Siamese network” architecture and use its ability to discriminate similarity to judge the similarity of two different faces.  
-* Compared with traditional CNN, the advantage of Siamese Network is that it does not need a large data set to train a good enough model, because the purpose of model is to compare the similarity of two inputs.
-
-###  - Combining control panel with computer vision
-* In the future, it can combined with AR glasses and widely used in the metaverse.
-
+# Difficulties & Innovation
 ### <font color="#4E2683">Difficulties</font>
-### - Model size problem
-* Implementing a Siamese Network that can correctly identify faces in ARC EM9D AIoT DK is a difficult problem. Because ARC EM9D AIoT DK only has less than 2MB of storage to store weight. We tried to reduce the parameters, but if we reduce too many parameters, the verification result will be inaccurate.
-* Therefore, how to balance the model size and validation accuracy is a major problem we face.
+#### - Model size
+* Available memory size < 2MB
+* Auto-Encoder: Dimension Reduction
+* Post training quantization: fp32 → int8
+
+#### - Input images pairs for the Siamese network
+* Siamese network needs to compare two images at the same time
+
+![image](https://user-images.githubusercontent.com/96005167/181212761-e70de490-c7af-4a76-9625-3cca4ffae1f4.png)
+
 
 ### - Activation op can not use
 * In the original paper of Siamese Network, the sigmoid function is used as the activation function of the last layer.
 * However, ARC EM9D does not support the sigmoid function as activation function.
 * When we tried to use tanh as activation function with MSE as the loss function, we found that tanh did not support it either.
 * So, we decided to change the layers and architecture to make it a brand new Siamese Network to comply with ARC EM9D op codes requirements.
+
+
+
+### <font color="#4E2683">Innovation</font>
+* Using Siamese Network Architecture on TinyML
+ Deep learning and CNN have made tremendous progress in the field of face recognition.
+ - We choose “ Siamese network” architecture and use its ability to discriminate similarity to judge the similarity of two different faces.  
+ - Compared with traditional CNN, the advantage of Siamese Network is that it does not need a large data set to train a good enough model, because the purpose of model is to compare the similarity of two inputs.
+
+###  - Combining control panel with computer vision
+* In the future, it can combined with AR glasses and widely used in the metaverse.
+
 
 ## Design & Implementation
 ### <font color="#4E2683">Deep Facial Verification </font>
