@@ -1,4 +1,5 @@
-# <font color=#800080>**2022 Synopsys ARC AIoT Design Contest**</font>
+# **2022 Synopsys ARC AIoT Design Contest**
+
 ## 非接觸式控制面板 - <font color="#0070C0">Contactless Control Panel</font>
 ## NCTU Oasis Lab (Machine Learning Group) - 2022 Synopsys ARC AIoT Design Contest
 #### Advisor： 張錫嘉 教授
