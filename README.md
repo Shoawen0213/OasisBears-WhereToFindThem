@@ -174,11 +174,6 @@ We propose a contactless control panel combined with face authentication, which 
 ![image](https://user-images.githubusercontent.com/96005167/181227053-05a975c7-411f-4452-95fa-de34d910a444.png)
 
 
-### <font color="#4E2683">【Inferece on ARC EM9D】 </font>
-![image](https://user-images.githubusercontent.com/96005167/181228097-327b7039-6d2d-4c30-bf21-f913e5a602b6.png)
-![image](https://user-images.githubusercontent.com/96005167/181227574-f1c76aeb-5f58-4713-a813-f43b92800bb1.png)
-
-
 ### <font color="#4E2683">【Virtual Button Panel】 </font>
 * Hardware: NVIDIA Jetson Nano
 * Hand Tracking: Google MediaPipe Hand tracking module
@@ -221,12 +216,32 @@ We propose a contactless control panel combined with face authentication, which 
 ![image](https://user-images.githubusercontent.com/96005167/181224106-4036d2fe-6567-43df-a8b3-c59f2d867e22.png)
 
 
-## 測試結果
-### <font color="#4E2683">Siamese Network (Orig.)</font>
+# Demo & Result
+### <font color="#4E2683">【Inferece on PC】 </font>
+![image](https://user-images.githubusercontent.com/96005167/181228606-2d5c1c3b-1ebb-4a03-8392-1f2d047b3c8f.png)
+
+
+
+
+Demo1: https://www.youtube.com/watch?v=hRp12IpJmxE&ab_channel=ChenBaker
+
+[<img src="https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg" width="50%">](https://www.youtube.com/watch?v=hRp12IpJmxE&ab_channel=ChenBaker)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hRp12IpJmxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+### <font color="#4E2683">【Inferece on ARC EM9D】 </font>
+![image](https://user-images.githubusercontent.com/96005167/181228097-327b7039-6d2d-4c30-bf21-f913e5a602b6.png)
+![image](https://user-images.githubusercontent.com/96005167/181227574-f1c76aeb-5f58-4713-a813-f43b92800bb1.png)
+
+
+
+### <font color="#4E2683">【Siamese Network (Orig.)】</font>
 ![](https://i.imgur.com/TugU36L.png)
-### <font color="#4E2683">Simulation Animation </font>
-* Demo Video
-![](https://i.imgur.com/YaId3qU.png)
+
+
+### <font color="#4E2683">【Performance】</font>
+![image](https://user-images.githubusercontent.com/96005167/181229878-d37af024-c3c4-4d27-a3ac-794f23993ea3.png)
+
 
 
 ## 總結展望
