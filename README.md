@@ -2,47 +2,47 @@
 <!-- <a href="https://contest.synopsys.com.tw/2022ARC
 " target="_blank"><img src="https://user-images.githubusercontent.com/96005167/181190562-62bdda9f-2405-4c3a-b0f7-1f53a0abd062.png"
 alt="Link is failed!" width="300" border="10" /></a> -->
-# **Contactless Control Panel**
+<!-- # **Contactless Control Panel** -->
 
-## Team Info.
-### NCTU Oasis Lab (Machine Learning Group)
+# Team Info.
+## NCTU Oasis Lab (Machine Learning Group)
 <!-- ![](https://user-images.githubusercontent.com/96005167/181191742-5188627a-c551-4014-901f-e627fd9b6ce2.png) -->
 <a href="[https://contest.synopsys.com.tw/2022AR](https://sites.google.com/a/g2.nctu.edu.tw/oasis_317a/)C
 " target="_blank"><img src="https://user-images.githubusercontent.com/96005167/181191742-5188627a-c551-4014-901f-e627fd9b6ce2.png"
-alt="Link is failed!" width="200" border="10" /></a>
+alt="Link is failed!" width="400" border="10" /></a>
 
-#### Team ：  綠洲熊與他們的窩
-#### Advisor：張錫嘉 教授
-#### Members：陳冠瑋、鄭紹文、曹家輔、李家毓
-#### Introduction:
+### Title: 非接觸式控制面板 - Contactless Control Panel
+### Team: 綠洲熊與他們的窩
+### Advisor: 張錫嘉 教授
+### Members: 陳冠瑋、鄭紹文、曹家輔、李家毓
+### Introduction:
 We are students from the Oasis Lab of National Chiao Tung University (NCTU).
 
 The research field of the lab covers hardware implementation of ML, ECC, and Security. We hope that the ideals and works will be turned into reality through this competition, and we will try our best to complete the project worth looking forward to!
 
 
-## <font color="#4E2683">Outline</font>
-### [1. Introduction](#作品概述)
-### [2. 難點與創新](#難點與創新)
+# <font color="#4E2683">Outline</font>
+### [1. Introduction](https://github.com/KW-Baker/OasisBears-WhereToFindThem/edit/main/README.md#introduction-1)
+### [2. Difficulties & Innovation](https://github.com/KW-Baker/OasisBears-WhereToFindThem/edit/main/README.md#difficulties--innovation)
 ### [3. 設計與實現](#設計與實現)
 ### [4. 作品進度](#作品進度)
 ### [5. 測試結果](#測試結果)
 ### [6. 總結展望](#總結展望)
 
-#  
-## 作品概述
-
-### <font color="#4E2683">Motivation</font>
+ 
+# Introduction
+## <font color="#4E2683">Motivation</font>
 * Smart building
 * Smart security
 * Prevent epidemic
 
-### <font color="#4E2683">Solution</font>
+## <font color="#4E2683">Solution</font>
 We propose a contactless control panel combined with face authentication, which can send control signals and verify the user’s identity without touching the panel. 
 
 * Using “Siamese Network” to train a face authentication model with a small number of examples, and deploy the model on ARC EM9D AIoT DK with TensorFlow Lite.
 * Using Mediapipe Hand and OpenCV to implement a contactless virtual control panel through gesture recognition on NVIDIA Jetson Nano.
 
-### <font color="#4E2683">Scenario 1: </font>Virtual elevator button panel + Visitor verification
+## <font color="#4E2683">Scenario 1: </font>Virtual elevator button panel + Visitor verification
 *  Control the elevator with gesture recognition
 *  Visitor verification
 *  Virtual elevator control panel
@@ -58,7 +58,7 @@ We propose a contactless control panel combined with face authentication, which 
 * Avoid touching public touchscreens
 
 
-## 難點與創新
+## Difficulties & Innovation
 ### <font color="#4E2683">Innovation</font>
 ### - Using Siamese Network Architecture on TinyML
 * Deep learning and CNN have made tremendous progress in the field of face recognition.
@@ -79,7 +79,7 @@ We propose a contactless control panel combined with face authentication, which 
 * When we tried to use tanh as activation function with MSE as the loss function, we found that tanh did not support it either.
 * So, we decided to change the layers and architecture to make it a brand new Siamese Network to comply with ARC EM9D op codes requirements.
 
-## 設計與實現
+## Design & Implementation
 ### <font color="#4E2683">Deep Facial Verification </font>
 * Deployment: ARC EM9D AIoT DK
 * Task: Face verification 
