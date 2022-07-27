@@ -1,7 +1,12 @@
+<a href="https://contest.synopsys.com.tw/2022ARC
+" target="_blank"><img src="https://user-images.githubusercontent.com/96005167/181190562-62bdda9f-2405-4c3a-b0f7-1f53a0abd062.png"
+alt="Link is failed!" width="400" border="10" /></a>
+
 # **2022 Synopsys ARC AIoT Design Contest**
 
-## 非接觸式控制面板 - <font color="#0070C0">Contactless Control Panel</font>
-## NCTU Oasis Lab (Machine Learning Group) - 2022 Synopsys ARC AIoT Design Contest
+## 非接觸式控制面板 - Contactless Control Panel
+## NCTU Oasis Lab (Machine Learning Group)
+
 #### Advisor： 張錫嘉 教授
 #### 隊員：陳冠瑋、鄭紹文、曹家輔、李家毓
 #### 隊名：綠洲熊與他們的窩
