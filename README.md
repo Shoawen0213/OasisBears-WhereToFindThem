@@ -1,4 +1,5 @@
 # **[2022 Synopsys ARC AIoT Design Contest](https://contest.synopsys.com.tw/2022ARC)**
+
 <!-- <a href="https://contest.synopsys.com.tw/2022ARC
 " target="_blank"><img src="https://user-images.githubusercontent.com/96005167/181190562-62bdda9f-2405-4c3a-b0f7-1f53a0abd062.png"
 alt="Link is failed!" width="300" border="10" /></a> -->
@@ -7,7 +8,7 @@ alt="Link is failed!" width="300" border="10" /></a> -->
 # Team Info.
 ### NCTU Oasis Lab (Machine Learning Group)
 <!-- ![](https://user-images.githubusercontent.com/96005167/181191742-5188627a-c551-4014-901f-e627fd9b6ce2.png) -->
-<a href="[https://contest.synopsys.com.tw/2022AR](https://sites.google.com/a/g2.nctu.edu.tw/oasis_317a/)C
+<a href="https://sites.google.com/a/g2.nctu.edu.tw/oasis_317a/
 " target="_blank"><img src="https://user-images.githubusercontent.com/96005167/181191742-5188627a-c551-4014-901f-e627fd9b6ce2.png"
 alt="Link is failed!" width="400" border="10" /></a>
 
