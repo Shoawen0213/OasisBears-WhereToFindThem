@@ -5,14 +5,14 @@ alt="Link is failed!" width="300" border="10" /></a> -->
 <!-- # **Contactless Control Panel** -->
 
 # Team Info.
-## NCTU Oasis Lab (Machine Learning Group)
+### NCTU Oasis Lab (Machine Learning Group)
 <!-- ![](https://user-images.githubusercontent.com/96005167/181191742-5188627a-c551-4014-901f-e627fd9b6ce2.png) -->
 <a href="[https://contest.synopsys.com.tw/2022AR](https://sites.google.com/a/g2.nctu.edu.tw/oasis_317a/)C
 " target="_blank"><img src="https://user-images.githubusercontent.com/96005167/181191742-5188627a-c551-4014-901f-e627fd9b6ce2.png"
 alt="Link is failed!" width="400" border="10" /></a>
 
-### Title: 非接觸式控制面板 - Contactless Control Panel
-### Team: 綠洲熊與他們的窩
+### **非接觸式控制面板 - Contactless Control Panel**
+### 綠洲熊與他們的窩
 ### Advisor: 張錫嘉 教授
 ### Members: 陳冠瑋、鄭紹文、曹家輔、李家毓
 ### Introduction:
@@ -24,19 +24,25 @@ The research field of the lab covers hardware implementation of ML, ECC, and Sec
 # <font color="#4E2683">Outline</font>
 ### [1. Introduction](https://github.com/KW-Baker/OasisBears-WhereToFindThem/edit/main/README.md#introduction-1)
 ### [2. Difficulties & Innovation](https://github.com/KW-Baker/OasisBears-WhereToFindThem/edit/main/README.md#difficulties--innovation)
-### [3. 設計與實現](#設計與實現)
-### [4. 作品進度](#作品進度)
-### [5. 測試結果](#測試結果)
-### [6. 總結展望](#總結展望)
+### [3. Design & Implementation](#設計與實現)
+### [4. Demo & Result](#測試結果)
+### [5. Conclusion](#總結展望)
 
  
 # Introduction
-## <font color="#4E2683">Motivation</font>
+
+
+<!-- https://user-images.githubusercontent.com/96005167/181204805-ef69177c-7cb1-4f42-ae35-33eff0ccf267.mp4 -->
+
+
+![](https://user-images.githubusercontent.com/96005167/181206306-792f0f50-0c1e-4d1d-8ec2-fed1f45ca1ff.gif)
+
+### <font color="#4E2683">Motivation</font>
 * Smart building
 * Smart security
 * Prevent epidemic
 
-## <font color="#4E2683">Solution</font>
+### <font color="#4E2683">Solution</font>
 We propose a contactless control panel combined with face authentication, which can send control signals and verify the user’s identity without touching the panel. 
 
 * Using “Siamese Network” to train a face authentication model with a small number of examples, and deploy the model on ARC EM9D AIoT DK with TensorFlow Lite.
