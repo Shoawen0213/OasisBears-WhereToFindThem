@@ -151,6 +151,33 @@ We propose a contactless control panel combined with face authentication, which 
 
 ![image](https://user-images.githubusercontent.com/96005167/181220830-c06e1ef9-5e4a-4db1-9705-d22bdd2bf746.png)
 
+### <font color="#4E2683">【AutoEncoder】 </font>
+#### -Dimension Reduction
+* Compress input image into latent with Encoder
+* Use latent to recover image with  Decoder
+
+![image](https://user-images.githubusercontent.com/96005167/181225748-09712221-9d2b-4d83-a2d1-e4f748716809.png)
+
+![image](https://user-images.githubusercontent.com/96005167/181225863-1788c1fc-b150-43f6-b743-519706f4aedd.png)
+
+
+#### -Method
+* Use VGG-16 as an architecture baseline
+
+![image](https://user-images.githubusercontent.com/96005167/181225964-6c96e330-00a5-48f0-b783-868d76435672.png)
+
+![image](https://user-images.githubusercontent.com/96005167/181225991-6efd1911-82ba-4731-b820-43cd35df60dc.png)
+
+
+### <font color="#4E2683">【AutoEncoder + Siamese Network】 </font>
+
+![image](https://user-images.githubusercontent.com/96005167/181227053-05a975c7-411f-4452-95fa-de34d910a444.png)
+
+
+### <font color="#4E2683">【Inferece on ARC EM9D】 </font>
+![image](https://user-images.githubusercontent.com/96005167/181228097-327b7039-6d2d-4c30-bf21-f913e5a602b6.png)
+![image](https://user-images.githubusercontent.com/96005167/181227574-f1c76aeb-5f58-4713-a813-f43b92800bb1.png)
+
 
 ### <font color="#4E2683">【Virtual Button Panel】 </font>
 * Hardware: NVIDIA Jetson Nano
@@ -175,7 +202,7 @@ We propose a contactless control panel combined with face authentication, which 
 
 
 ![](https://i.imgur.com/p1pRgkU.png)
-![](https://i.imgur.com/jVZg8aU.png)
+
 
 ### <font color="#4E2683"> 【MediaPipe Hand Landmarks】</font>
 
@@ -192,8 +219,6 @@ We propose a contactless control panel combined with face authentication, which 
 * Send the result signal to the server through Wi-Fi to control the elevator simulation animation.
 * In addition, we also consider the problem of elevator scheduling, so that the elevator can update the input floor in real time and can input multiple floors at the same time.
 ![image](https://user-images.githubusercontent.com/96005167/181224106-4036d2fe-6567-43df-a8b3-c59f2d867e22.png)
-
-![image](https://user-images.githubusercontent.com/96005167/181224525-bf1d1670-98d8-4ec3-a16f-a91830a71a8d.png)
 
 
 ## 測試結果
