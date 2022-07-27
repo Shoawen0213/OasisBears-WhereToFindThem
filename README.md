@@ -240,19 +240,32 @@ Demo1: https://www.youtube.com/watch?v=hRp12IpJmxE&ab_channel=ChenBaker
 
 
 ### <font color="#4E2683">【Performance】</font>
-![image](https://user-images.githubusercontent.com/96005167/181229878-d37af024-c3c4-4d27-a3ac-794f23993ea3.png)
+![image](https://user-images.githubusercontent.com/96005167/181235631-be8130a1-a5df-4a34-9253-293809b35323.png)
 
+
+### <font color="#4E2683">【Demo】</font>
+Demo2: https://www.youtube.com/watch?v=tXEByFnG8Jw&t=18s&ab_channel=ChenBaker
+
+[<img src="https://user-images.githubusercontent.com/96005167/181236293-54d89b35-f6c5-4fa7-940d-e8b61bb5dcee.png" width="50%">](https://www.youtube.com/watch?v=tXEByFnG8Jw&t=18s&ab_channel=ChenBaker)
 
 
 # Conclusion
-### <font color="#4E2683">Hope to add… </font>
-* Recording the time when strange visitors enter the building.
+### <font color="#4E2683">【Hope to add…】 </font>
+* Recording the time when stranger enter the building.
 * Voice control 
 
-### <font color="#4E2683">Hope it can be applied in the following scenarios:</font>
+### <font color="#4E2683">【Hope it can be applied in the following scenarios】</font>
 * Smart door lock
 * Smart food ordering machine
 * Smart automatic ticketing system
 * ATM
 
+### <font color="#4E2683">【Our Experience !】</font>
 
+![image](https://user-images.githubusercontent.com/96005167/181235945-a1873c05-be95-4487-a3c0-65105bbe297d.png)
+
+
+我們實驗室ML研究團隊自2018年起即開始參加Synopsys ARC AIoT競賽，期間有成功亦有失敗，從佳作到今年的冠軍，一路走來，每一次的努力都是不可多得的養分。今年結合大AI時代以及全球疫情，實現出非接觸式控制面板系統，這種邊緣端裝置對於功耗和晶片面積有不小的要求，我們利用新思科技的ARC EM9D處理器來實現高效臉部識別，結合後端處理來實現系統設計，過程中遇到不少問題，一步一步慢慢的利用MLI軟體庫尋找有效的解決辦法，最後的成品很開心能夠獲得評審們的賞識，希望日後Synopsys ARC AIoT能提供更強大的platform，來讓大家激盪且實現出更有趣的設計!
+
+
+Our ML research team at National Chiao Tung University has been participating in the Synopsys ARC AIoT competition since 2018. There were successes and failures during this period. From the best work to this year's champion, every effort is a rare nutrient along the way. This year, we implement the contactless virtual control panel which was inspired by the big AI era and the global pandemic. An edge device like this idea usually concerns the power consumption and the chip area. We use the Synopsys ARC EM9D processor to fulfill efficient face verification and combine it with the backend processing to accomplish the whole design. We felt like being up against the wall and felt frustrated in these several months, but as the saying goes “When the going gets tough, the tough get going.”. By using the MLI to find suitable solutions, it’s our pleasure that our project can favor by the judges. Hope that Synopsys can provide the more powerful processor for the contestants to design more interesting and efficient implementation.
