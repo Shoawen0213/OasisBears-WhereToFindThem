@@ -44,19 +44,19 @@ We propose a contactless control panel combined with face authentication, which 
 * Using “Siamese Network” to train a face authentication model with a small number of examples, and deploy the model on ARC EM9D AIoT DK with TensorFlow Lite.
 * Using Mediapipe Hand and OpenCV to implement a contactless virtual control panel through gesture recognition on NVIDIA Jetson Nano.
 
-### <font color="#4E2683">【Scenario 1】: </font>Virtual elevator button panel + Visitor verification
+### <font color="#4E2683">【Expected Application Scenario 1】: </font>Virtual elevator button panel + Visitor verification
 *  Control the elevator with gesture recognition
 *  Visitor verification
 *  Virtual elevator control panel
 
 ![](https://user-images.githubusercontent.com/96005167/181206306-792f0f50-0c1e-4d1d-8ec2-fed1f45ca1ff.gif)
 
-### <font color="#4E2683">【Scenario 2】: </font>Smart door lock 
+### <font color="#4E2683">【Expected Application Scenario 2】: </font>Smart door lock 
 *  Identity verification
 *  Stranger Record
 *  Virtual touchless door lock
 
-### <font color="#4E2683">【Scenario 3】: </font>Contactless ticket machine screen
+### <font color="#4E2683">【Expected Application Scenario 3】: </font>Contactless ticket machine screen
 * Record the usage time of different users
 * Combined with automatic recommendation system
 * Avoid touching public touchscreens
